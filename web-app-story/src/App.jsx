@@ -1,7 +1,6 @@
 import React from 'react';
 
 const App = () => {
-  // Apply styles directly to the body using JavaScript
   React.useEffect(() => {
     document.body.style.margin = '0'; // Reset body margin
     document.body.style.padding = '0'; // Reset body padding
@@ -9,23 +8,29 @@ const App = () => {
 
   return (
     <div style={{ position: 'relative', width: '100vw', height: '100vh' }}>
-      <img
-        src="/public/photos/bris center.jpg"
-        alt="Bristol City Centre at Night" // Always add alt text for accessibility
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          objectFit: 'cover', // Ensures the image covers the entire area
-        }}
-      />
+<picture>
+  <source srcSet="/photos/floating harbour.jpg" media="(min-width: 1024px)" />
+  <source srcSet="/photos/floating harbour.jpg" media="(min-width: 768px)" />
+  <img
+    src="/photos/floating harbour.jpg"
+    style={{
+      position: 'absolute',
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100%',
+      objectFit: 'cover',
+    }}
+  />
+</picture>
       <div style={{
         backgroundColor: 'rgba(255, 255, 255, 0.5)',
         position: 'relative',
-        zIndex: 1, // Ensures this content is on top of the image
-        padding: '2.5rem', // Add padding to the box
+        width: '60vw',
+        height: '60vh',
+        display: 'flex', // Enable Flexbox
+        justifyContent: 'center', // Horizontally center the box
+        alignItems: 'center', // Vertically center the box
       }}>
         <h1 className="text-2xl font-bold text-center">Hello, World!</h1>
         <p className="text-center">
