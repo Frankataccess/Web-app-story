@@ -6,36 +6,52 @@ const App = () => {
     document.body.style.padding = '0'; // Reset body padding
   }, []);
 
+
+
   return (
-    <div style={{ position: 'relative', width: '100vw', height: '100vh' }}>
-<picture>
-  <source srcSet="/photos/floating harbour.jpg" media="(min-width: 1024px)" />
-  <source srcSet="/photos/floating harbour.jpg" media="(min-width: 768px)" />
-  <img
-    src="/photos/floating harbour.jpg"
-    style={{
-      position: 'absolute',
-      top: 0,
-      left: 0,
-      width: '100%',
-      height: '100%',
-      objectFit: 'cover',
-    }}
-  />
-</picture>
+    <div style={{ position: 'relative', width: '100vw', height: '100vh' ,display: 'flex', justifyContent:'center',alignItems:'center'}}>
+      <picture>
+        <source srcSet="/photos/floating harbour.jpg" media="(min-width: 1024px)" />
+        <source srcSet="/photos/floating harbour.jpg" media="(min-width: 768px)" />
+        <img
+          src="/photos/floating harbour.jpg"
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            
+          }}
+        />
+      </picture>
       <div style={{
         backgroundColor: 'rgba(255, 255, 255, 0.5)',
         position: 'relative',
-        width: '60vw',
+        width: '70vw',
         height: '60vh',
-        display: 'flex', // Enable Flexbox
-        justifyContent: 'center', // Horizontally center the box
-        alignItems: 'center', // Vertically center the box
+
       }}>
-        <h1 className="text-2xl font-bold text-center">Hello, World!</h1>
-        <p className="text-center">
-          This is a semi-transparent white box. Lorem ipsum dolor sit amet consectetur adipisicing elit...
+          <h1 className="text-2xl font-bold text-center" align="center" >Central Bristol</h1>
+          <h2 align='center'>
+            Night out in Bristol: 
+          <span style={{ 
+            color: 'red', 
+            textShadow: '-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000' 
+          }}>
+            Make it home to Lockleaze
+          </span>
+        </h2>
+        <p style={{ textAlign: 'center', fontSize: '20px', paddingTop: '50px',paddingLeft: '20px', paddingRight: '20px' }}>
+          After a night out you find yourself alone in central Bristol and you need to make it home
         </p>
+
+        <div className="flex justify-between absolute bottom-0 left-0 right-0 p-5">
+    <button className="bg-blue-500 text-white px-4 py-2 rounded">Button 1</button>
+    <button className="bg-green-500 text-white px-4 py-2 rounded">Button 2</button>
+  </div>
+
       </div>
     </div>
   );
