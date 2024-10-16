@@ -31,6 +31,8 @@ const App = () => {
         position: 'relative',
         width: '70vw',
         height: '60vh',
+        display: "flex",
+        flexDirection:"column",
 
       }}>
           <h1 className="text-2xl font-bold text-center" align="center" >Central Bristol</h1>
@@ -43,14 +45,18 @@ const App = () => {
             Make it home to Lockleaze
           </span>
         </h2>
-        <p style={{ textAlign: 'center', fontSize: '20px', paddingTop: '50px',paddingLeft: '20px', paddingRight: '20px' }}>
+        <p style={{ textAlign: 'center', fontSize: '20px', paddingTop: '50px',paddingLeft: '20px', paddingRight: '20px', flexGrow:"1" }}>
           After a night out you find yourself alone in central Bristol and you need to make it home
         </p>
 
-        <div className="flex justify-between absolute bottom-0 left-0 right-0 p-5">
-    <button className="bg-blue-500 text-white px-4 py-2 rounded">Button 1</button>
-    <button className="bg-green-500 text-white px-4 py-2 rounded">Button 2</button>
-  </div>
+        <div className="flex justify-between absolute" style={{
+          
+        }} >
+          <button>
+            Option 1
+          </button>
+          <button className="bg-green-500 text-white px-4 py-2 rounded">Button 2</button>
+        </div>
 
       </div>
     </div>
