@@ -1,0 +1,116 @@
+{
+    "story": [
+    {
+        "ID":"1",
+        "route":"Start",
+        "Title":"Night out in Bristol",
+        "Sub-Title":"Mission: Make it home to Lockleaze",
+        "body":"After a night out in town you find yourself in the centre of Bristol",
+        "choices": [
+            {
+                "text": "Go to the bus stop",
+                "target": "2",
+                "target-route":"Bus Stop"
+            },
+            {
+                "text": "Hail a taxi",
+                "target":"a",
+                "target-route":"Taxi"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"2",
+        "route":"Bus Stop",
+        "Title":"Bus stop",
+        "Sub-Title":"There are no more buses coming",
+        "body":"you see a homeless man asleep at the bus stop, The homeless man catches you looking at him and asks you for money ",
+        "choices": [
+            {
+                "text": "Give him money",
+                "target": "3",
+                "target-route":"Bus Stop give"
+            },
+            {
+                "text": "Dont give him money",
+                "target":"4",
+                "target-route":"Bus stop dont give"
+            },
+            {
+                "text": "Take his money",
+                "target":"5",
+                "target-route":"Bus stop fight"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"3",
+        "route":"Bus Stop give",
+        "Title":"Bus stop",
+        "Sub-Title":"",
+        "body":"You gave him £2",
+        "money":8,
+        "choices": [
+            {
+                "text": "Taxi",
+                "target": "T1",
+                "target-route":"Taxi"
+            },
+            {
+                "text": "Walk back",
+                "target":"6",
+                "target-route":"Walk back"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"4",
+        "route":"Bus Stop dont give",
+        "Title":"Bus stop",
+        "Sub-Title":"He stabs you with a mysterious needle",
+        "body":"Your head starts spinning and your vision becomes blurry.",
+        "effect":"EFFECT GAINED: BUGGING",
+        "choices": [
+            {
+                "text": "Taxi",
+                "target": "T1",
+                "target-route":"Taxi"
+            },
+            {
+                "text": "Walk back",
+                "target":"6",
+                "target-route":"Walk back"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"5",
+        "route":"Bus Stop fight",
+        "Title":"Bus stop",
+        "Sub-Title":"You threaten him. He stabs you with a mysterious needle",
+        "body":"you headbut the homeless man and take his money. Your head starts spinning and your vision becomes blurry.",
+        "effect":"EFFECT GAINED: BUGGING",
+        "choices": [
+            {
+                "text": "Taxi",
+                "target": "T1",
+                "target-route":"Taxi"
+            },
+            {
+                "text": "Walk back",
+                "target":"6",
+                "target-route":"Walk back"
+            }
+        ],
+        "image":"d"
+    },
+
+
+
+    
+]
+}

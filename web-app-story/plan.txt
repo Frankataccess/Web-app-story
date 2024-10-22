@@ -1,0 +1,11 @@
+Make a Json file 
+
+id:1
+image: img source
+title: Night out in Bris 
+sub title: Some other stuff  
+main text: blah blah blah
+
+pull in json file 
+use it to set background ect 
+use it to pull in story
