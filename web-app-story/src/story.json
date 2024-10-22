@@ -92,8 +92,9 @@
         "route":"Bus Stop fight",
         "Title":"Bus stop",
         "Sub-Title":"You threaten him. He stabs you with a mysterious needle",
-        "body":"you headbut the homeless man and take his money. Your head starts spinning and your vision becomes blurry.",
+        "body":"you headbut the homeless man and take his money. You have gained £1.24 Your head starts spinning and your vision becomes blurry.",
         "effect":"EFFECT GAINED: BUGGING",
+        "money":11.24,
         "choices": [
             {
                 "text": "Taxi",
@@ -104,6 +105,76 @@
                 "text": "Walk back",
                 "target":"6",
                 "target-route":"Walk back"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"6",
+        "route":"Bear pit",
+        "Title":"Walking to Bearpit",
+        "Sub-Title":"As your walking a police car pulls up next to you",
+        "body":"They roll down the window",
+        "choices": [
+            {
+                "text": "Continue",
+                "target": "P1",
+                "target-route":"Police"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"P1",
+        "route":"Police",
+        "Title":"Police",
+        "Sub-Title":"They roll down the window",
+        "body":"They ask you where your heading",
+        "choices": [
+            {
+                "text": "Home",
+                "target": "P2",
+                "target-route":"Police"
+            },
+            {
+                "text":"Out",
+                "target":"P3",
+                "target-route":"Police"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"P2",
+        "route":"Police",
+        "Title":"Police",
+        "Sub-Title":"They offer you a lift home",
+        "body":"",
+        "choices": [
+            {
+                "text": "Accept",
+                "target": "P5",
+                "target-route":"Police"
+            },
+            {
+                "text":"Decline",
+                "target":"P4",
+                "target-route":"Police"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"P3",
+        "route":"Police",
+        "Title":"Police",
+        "Sub-Title":"They wish you a good night",
+        "body":"",
+        "choices": [
+            {
+                "text": "Continue",
+                "target": "B1",
+                "target-route":"Bear pit"
             }
         ],
         "image":"d"
