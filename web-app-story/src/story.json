@@ -172,9 +172,9 @@
         "body":"",
         "choices": [
             {
-                "text": "Continue",
-                "target": "B1",
-                "target-route":"Bear pit"
+                "text": "Continue (unlinked)",
+                "target": "",
+                "target-route":""
             }
         ],
         "image":"d"
@@ -308,17 +308,150 @@
         "choices": [
             {
                 "text": "if roll >3",
-                "target": "P13",
-                "target-route":"police fight"
+                "target": "P16",
+                "target-route":"police run"
             },
             {
                 "text": "if roll <3",
-                "target": "P14",
-                "target-route":"police fight"
+                "target": "P15",
+                "target-route":"police run"
             }
         ],
         "image":"d"
     },
+    {
+        "ID":"P11",
+        "route":"Police fight",
+        "Title":"Police",
+        "Sub-Title":"They offer you a lift home",
+        "body":"",
+        "choices": [
+            {
+                "text": "Accept",
+                "target": "P17",
+                "target-route":"police"
+            },
+            {
+                "text": "Decline",
+                "target": "P6",
+                "target-route":"police "
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"P12",
+        "route":"Police ",
+        "Title":"Police",
+        "Sub-Title":"Run away",
+        "body":"You have escaped",
+        "choices": [
+            {
+                "text": "Continue(Unlinked)",
+                "target": "",
+                "target-route":""
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"P13",
+        "route":"Police fight",
+        "Title":"Police FIGHT",
+        "Sub-Title":"You fight the police officers",
+        "body":"You swing for them and miss. You slip and fall to the ground. You have been arrested",
+        "choices": [
+            {
+                "text": "Continue",
+                "target": "E2",
+                "target-route":"End"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"P14",
+        "route":"Police car",
+        "Title":"Police",
+        "Sub-Title":"You fight the police officers",
+        "body":"With a single strike you knock out the first police officer. The other runs towards you. You headbutt him and rob his car keys. In your wavy state you get behind the wheel and attempt to drive home. Suddenly Trinity academy jumps out infront of you and you crash through the front gates. You stumble out of the car and drag yourself the rest of the way home.",
+        "choices": [
+            {
+                "text": "Continue",
+                "target": "E1",
+                "target-route":"End"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"P15",
+        "route":"Police run",
+        "Title":"Police",
+        "Sub-Title":"You run from the law",
+        "body":"A pole appears infront of you as you run straight into it. The police catch up to you and arrest you",
+        "choices": [
+            {
+                "text": "Continue",
+                "target": "E2",
+                "target-route":"End"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"P16",
+        "route":"Police run",
+        "Title":"Police",
+        "Sub-Title":"You run from the law",
+        "body":"With your special powers from the mysterious need you manage to escape the police",
+        "choices": [
+            {
+                "text": "Continue(Unlinked)",
+                "target": "",
+                "target-route":""
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"P17",
+        "route":"Police ",
+        "Title":"Police",
+        "Sub-Title":"You accept their offer",
+        "body":"In your blurry state you have fallen for the simplest trick in the book. You have been arrested.",
+        "choices": [
+            {
+                "text": "Continue",
+                "target": "E2",
+                "target-route":"End"
+            }
+        ],
+        "image":"d"
+    },    
+    {
+        "ID":"B1",
+        "route":"Bear pit",
+        "Title":"Bear pit",
+        "Sub-Title":"You walk into the Bear pit",
+        "body":"A group of people approach you (Dice roll)",
+        "choices": [
+            {
+                "text": "if roll >3",
+                "target": "B3",
+                "target-route":"End"
+            },            {
+                "text": "if roll <3",
+                "target": "BM1",
+                "target-route":"End"
+            }
+        ],
+        "image":"d"
+    },
+    
+    
+
+
 
 
 
