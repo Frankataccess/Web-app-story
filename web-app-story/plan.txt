@@ -11,3 +11,5 @@ use it to set background ect
 use it to pull in story
 
 pass effects into main code from json so it stores the effect and money
+
+need to make endings 

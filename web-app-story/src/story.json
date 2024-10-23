@@ -153,12 +153,12 @@
         "choices": [
             {
                 "text": "Accept",
-                "target": "P5",
+                "target": "P4",
                 "target-route":"Police"
             },
             {
                 "text":"Decline",
-                "target":"P4",
+                "target":"P3",
                 "target-route":"Police"
             }
         ],
@@ -168,13 +168,153 @@
         "ID":"P3",
         "route":"Police",
         "Title":"Police",
-        "Sub-Title":"They wish you a good night",
+        "Sub-Title":"They wish you a good rest of your night",
         "body":"",
         "choices": [
             {
                 "text": "Continue",
                 "target": "B1",
                 "target-route":"Bear pit"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"P4",
+        "route":"Police",
+        "Title":"Police",
+        "Sub-Title":"You get in the back of the car",
+        "body":"They take you home and you arrive safely.",
+        "choices": [
+            {
+                "text": "Finish",
+                "target": "E1",
+                "target-route":"End"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"P5",
+        "route":"Police-bugging",
+        "Title":"Police",
+        "Sub-Title":"They ask you if youve taken anything tonight",
+        "body":"",
+        "choices": [
+            {
+                "text": "Tell them about the homeless man",
+                "target": "p6",
+                "target-route":"Police-bugging"
+            },
+            {
+                "text": "Lie",
+                "target": "p7",
+                "target-route":"Police-bugging"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"P6",
+        "route":"Police-bugging",
+        "Title":"Police",
+        "Sub-Title":"They hop out the car to try and arrest you",
+        "body":"",
+        "choices": [
+            {
+                "text": "Co-operate",
+                "target": "p8",
+                "target-route":"Police-bugging"
+            },
+            {
+                "text": "Fight them",
+                "target": "p9",
+                "target-route":"Police-bugging"
+            },
+            {
+                "text": "Run Away",
+                "target": "p10",
+                "target-route":"Police-bugging"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"P7",
+        "route":"Police-bugging",
+        "Title":"Police",
+        "Sub-Title":"They ask you where your going",
+        "body":"",
+        "choices": [
+            {
+                "text": "Out for the night",
+                "target": "p6",
+                "target-route":"Police-bugging"
+            },
+            {
+                "text": "Home",
+                "target": "p11",
+                "target-route":"Police-bugging"
+            },
+            {
+                "text": "Run Away",
+                "target": "p12",
+                "target-route":"Police-bugging"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"P8",
+        "route":"Police",
+        "Title":"Police",
+        "Sub-Title":"You co-operate",
+        "body":"They put you in handcuffs and in the back of the car .",
+        "choices": [
+            {
+                "text": "Finish",
+                "target": "E2",
+                "target-route":"End"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"P9",
+        "route":"Police fight",
+        "Title":"Police",
+        "Sub-Title":"You prepare to fight the law (dice roll)",
+        "body":"",
+        "choices": [
+            {
+                "text": "if roll >3",
+                "target": "P13",
+                "target-route":"police fight"
+            },
+            {
+                "text": "if roll <3",
+                "target": "P14",
+                "target-route":"police fight"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"P10",
+        "route":"Police fight",
+        "Title":"Police",
+        "Sub-Title":"You run from the law (dice roll)",
+        "body":"",
+        "choices": [
+            {
+                "text": "if roll >3",
+                "target": "P13",
+                "target-route":"police fight"
+            },
+            {
+                "text": "if roll <3",
+                "target": "P14",
+                "target-route":"police fight"
             }
         ],
         "image":"d"
