@@ -1,6 +1,40 @@
 {
     "story": [
     {
+        "ID":"E1",
+        "route":"home safely",
+        "Title":"You have arrived home safely",
+        "Sub-Title":"",
+        "body":"",
+        "choices": [
+
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"E2",
+        "route":"Arrested",
+        "Title":"You have been arrested",
+        "Sub-Title":"",
+        "body":"",
+        "choices": [
+
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"E3",
+        "route":"party the night away",
+        "Title":"You Party the rest of the night away",
+        "Sub-Title":"",
+        "body":"",
+        "choices": [
+
+        ],
+        "image":"d"
+    },
+
+    {
         "ID":"1",
         "route":"Start",
         "Title":"Night out in Bristol",
@@ -438,16 +472,373 @@
         "choices": [
             {
                 "text": "if roll >3",
-                "target": "B3",
-                "target-route":"End"
+                "target": "B2",
+                "target-route":"Bear pit friends"
             },            {
                 "text": "if roll <3",
                 "target": "BM1",
-                "target-route":"End"
+                "target-route":"Badman encounter"
             }
         ],
         "image":"d"
     },
+    {
+        "ID":"B2",
+        "route":"Bear pit friends",
+        "Title":"Bear pit",
+        "Sub-Title":"One of them recognises you ",
+        "body":"they invite you out with them for the rest of the night ",
+        "choices": [
+            {
+                "text": "Accept",
+                "target": "B3",
+                "target-route":"Bear pit end"
+            },            {
+                "text": "Decline",
+                "target": "B4",
+                "target-route":"Bear pit"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"B3",
+        "route":"Bear pit end",
+        "Title":"Bear pit",
+        "Sub-Title":"You follow the group ",
+        "body":"They head into the center of bristol to party the rest of the night away",
+        "choices": [
+            {
+                "text": "Continue (unlinked)",
+                "target": "E3",
+                "target-route":"end (party rest of the night away)"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"B4",
+        "route":"Stokes croft",
+        "Title":"Stokes croft",
+        "Sub-Title":"You head your separate ways",
+        "body":"{Is bugging?}",
+        "choices": [
+            {
+                "text": "No",
+                "target": "B5",
+                "target-route":"Stokes croft"
+            },            {
+                "text": "Yes",
+                "target": "B7",
+                "target-route":"Stokes croft"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"B5",
+        "route":"Stokes croft",
+        "Title":"Stokes croft",
+        "Sub-Title":"Your legs feel tired",
+        "body":"Do you take a rest",
+        "choices": [
+            {
+                "text": "No",
+                "target": "B6",
+                "target-route":"Stokes croft-home"
+            },            {
+                "text": "Yes",
+                "target": "B7",
+                "target-route":"Turbo Island"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"B6",
+        "route":"Stokes croft-home",
+        "Title":"Stokes croft",
+        "Sub-Title":"You continue to walk",
+        "body":"Despite the ache in your legs you soldier on home",
+        "choices": [
+            {
+                "text": "Continue",
+                "target": "E1",
+                "target-route":"End(arrive home)"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"B7",
+        "route":"Turbo island",
+        "Title":"Turbo Island",
+        "Sub-Title":"You take a seat at Turbo Island ",
+        "body":"The ETERNAL BIN FIRE provides you with warmth. The peace is disturbed by a green coach that pulls up. The bottom of the coach oppens up to reveal a set of speakers. THE RAVE BUS HAS ARRIVED!",
+        "choices": [
+            {
+                "text": "Continue (unlinked)",
+                "target": "E3",
+                "target-route":"end (party rest of the night away)"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"BM1",
+        "route":"badman encounter",
+        "Title":"Badman encounter",
+        "Sub-Title":"A shadowy figure appears behind you",
+        "body":"They pull a knife and ask you for your possessions. {Is bugging?}",
+        "choices": [
+            {
+                "text": "Fight him",
+                "target": "BM2",
+                "target-route":"Badman Fight"
+            },   
+            {
+                "text": "Give him your stuff {If bugging}",
+                "target": "BM3",
+                "target-route":"Badman end"
+            },            {
+                "text": "Yes",
+                "target": "BM4",
+                "target-route":"Badman run"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"BM2",
+        "route":"Badman Fight",
+        "Title":"Badman Fight",
+        "Sub-Title":"",
+        "body":"{Has Mysterious Needle?}",
+        "choices": [
+            {
+                "text": "Yes",
+                "target": "BM5",
+                "target-route":"Badman Needle"
+            },   
+            {
+                "text": "Yes",
+                "target": "BM6",
+                "target-route":"Badman Fight"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"BM3",
+        "route":"badman End",
+        "Title":"Badman encounter",
+        "Sub-Title":"You give him your stuff",
+        "body":"You hand over your phone and wallet {Continue on path}",
+        "choices": [
+            {
+                "text": "Continue",
+                "target": "CCurrent path",
+                "target-route":"Current path"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"BM4",
+        "route":"badman run",
+        "Title":"Badman encounter",
+        "Sub-Title":"You try to run",
+        "body":"{Diceroll }",
+        "choices": [
+            {
+                "text": "roll >3",
+                "target": "BM10",
+                "target-route":"Badman escape"
+            },   
+            {
+                "text": "if roll <3",
+                "target": "BM9",
+                "target-route":"Badman slip"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"BM5",
+        "route":"badman needle ",
+        "Title":"Badman Fight",
+        "Sub-Title":"You stab him with the needle",
+        "body":"He spontaniously combusts into a cloud of glitter",
+        "choices": [
+            {
+                "text": "Continue (unlinked)",
+                "target": "Current path",
+                "target-route":"Current path"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"BM6",
+        "route":"badman encounter",
+        "Title":"Badman encounter",
+        "Sub-Title":"",
+        "body":"{Diceroll }",
+        "choices": [
+            {
+                "text": "if roll >3",
+                "target": "BM7",
+                "target-route":"Badman Fight win"
+            },   
+            {
+                "text": "if roll <3",
+                "target": "BM8",
+                "target-route":"Badman fight lose"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"BM7",
+        "route":"badman Fight win",
+        "Title":"Badman encounter",
+        "Sub-Title":"You headbutt him",
+        "body":"He Cries and runs away",
+        "choices": [
+            {
+                "text": "Continue (unlinked)",
+                "target": "Current path",
+                "target-route":"Current path"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"BM8",
+        "route":"badman Fight Lose",
+        "Title":"Badman encounter",
+        "Sub-Title":"You swing for him and miss",
+        "body":"He slaps you",
+        "choices": [
+            {
+                "text": "Continue",
+                "target": "BM3",
+                "target-route":"Badman end"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"BM9",
+        "route":"badman slip",
+        "Title":"Badman encounter",
+        "Sub-Title":"You slip and fall",
+        "body":"",
+        "choices": [
+            {
+                "text": "Continue",
+                "target": "BM3",
+                "target-route":"Badman end"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"BM10",
+        "route":"badman Fight Lose",
+        "Title":"Badman encounter",
+        "Sub-Title":"You swing for him and miss",
+        "body":"He slaps you",
+        "choices": [
+            {
+                "text": "Continue (unlinked)",
+                "target": "CCurrent path",
+                "target-route":"Current path"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"T1",
+        "route":"Taxi",
+        "Title":"Taxi",
+        "Sub-Title":"You hail a Taxi",
+        "body":"You tell him your heading to Lockleaze and get in the back of the Taxi {is bugging}",
+        "choices": [
+            {
+                "text": "{Bugging}",
+                "target": "T4",
+                "target-route":"Taxi kicked out"
+            },
+            {
+                "text": "{Not Bugging}",
+                "target": "T2",
+                "target-route":"Taxi"
+            }
+        ],
+        "image":"d"
+    },   
+    {
+        "ID":"T2",
+        "route":"Taxi",
+        "Title":"Taxi",
+        "Sub-Title":"You arrive at your destination",
+        "body":"The driver asks you to pay {is balance <£10}",
+        "choices": [
+            {
+                "text": "{Balance >£10}",
+                "target": "T3",
+                "target-route":"Taxi "
+            },
+            {
+                "text": "{Balance <£10}",
+                "target": "T4",
+                "target-route":"Taxi kicked out"
+            }
+        ],
+        "image":"d"
+    },
+    {
+        "ID":"T4",
+        "route":"Taxi Kicked out",
+        "Title":"Taxi",
+        "Sub-Title":"The taxi driver locks the doors",
+        "body":"He takes you to Gainsbrough square before he kicks you out {Dice roll}",
+        "choices": [
+            {
+                "text": "if roll >3",
+                "target": "P1",
+                "target-route":"Police)"
+            },
+            {
+                "text": "if roll <3",
+                "target": "BM1",
+                "target-route":"Badman encounter"
+            }
+            
+        ],
+        "image":"d"
+    }
+    
+    
+    
+    
+
+    
+
+    
+
+
+    
+
+
+
+    
+
+
+    
+    
+    
     
     
 
