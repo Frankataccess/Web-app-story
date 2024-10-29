@@ -48,7 +48,7 @@
             },
             {
                 "text": "Hail a taxi",
-                "target":"a",
+                "target":"T1",
                 "target-route":"Taxi"
             }
         ],
@@ -106,7 +106,7 @@
         "Title":"Bus stop",
         "Sub-Title":"He stabs you with a mysterious needle",
         "body":"Your head starts spinning and your vision becomes blurry.",
-        "effect":"EFFECT GAINED: BUGGING",
+        "effect":"BUGGING",
         "choices": [
             {
                 "text": "Taxi",
@@ -127,7 +127,7 @@
         "Title":"Bus stop",
         "Sub-Title":"You threaten him. He stabs you with a mysterious needle",
         "body":"you headbut the homeless man and take his money. You have gained £1.24 Your head starts spinning and your vision becomes blurry.",
-        "effect":"EFFECT GAINED: BUGGING",
+        "effect":"BUGGING",
         "money":11.24,
         "choices": [
             {
