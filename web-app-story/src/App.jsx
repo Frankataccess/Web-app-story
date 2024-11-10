@@ -30,8 +30,8 @@ const Story = () => {
     <div style={{ position: 'relative', width: '100vw', height: '100vh' ,display: 'flex', justifyContent:'center',alignItems:'center'}}>
     <picture>
         /*a */
-        <source srcSet="/photos/floating harbour.jpg" media="(min-width: 1024px)" />
-        <source srcSet="/photos/floating harbour.jpg" media="(min-width: 768px)" />
+        <source srcSet={currentScene.image} media="(min-width: 1024px)" />
+        <source srcSet={currentScene.image} media="(min-width: 768px)" />
         <img
         src="/photos/floating harbour.jpg"
         style={{
@@ -60,9 +60,7 @@ const Story = () => {
       <h3>{currentScene["Sub-Title"]}</h3> {/* Use bracket notation for keys with hyphens */}
       <p>{currentScene.body}</p>
 
-      {currentScene.image && (
-        <img src={currentScene.image} alt={`${currentScene.Title} scene`} />
-      )}
+
 
       <div className="choices">
         {currentScene.choices.map((choice, index) => (
