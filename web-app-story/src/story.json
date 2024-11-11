@@ -1257,15 +1257,15 @@
     },
     {
         "ID":"BMT10",
-        "route":"badman Fight Lose",
+        "route":"badman run",
         "Title":"Badman encounter",
-        "Sub-Title":"You swing for him and miss",
-        "body":"He slaps you",
+        "Sub-Title":"You run away",
+        "body":"",
         "choices": [
             {
                 "text": "Continue",
-                "target": "CCurrent path",
-                "target-route":"Current path"
+                "target": "E1",
+                "target-route":"End"
             }
         ],
         "image":"https://i.imgur.com/h65PfBR.jpg"
