@@ -9,7 +9,7 @@
         "choices": [
 
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/yi24yDO.jpg"
     },
     {
         "ID":"E2",
@@ -20,7 +20,7 @@
         "choices": [
 
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/sLKd8vd.jpg"
     },
     {
         "ID":"E3",
@@ -31,8 +31,21 @@
         "choices": [
 
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/XbOwktj.jpg"
     },
+    {
+        "ID":"E4",
+        "route":"Dead",
+        "Title":"YOU DIED",
+        "Sub-Title":"",
+        "body":"",
+        "choices": [
+
+        ],
+        "image":"https://i.imgur.com/yi24yDO.jpg"
+    },
+    
+    
 
     {
         "ID":"1",
@@ -77,7 +90,7 @@
                 "target-route":"Bus stop fight"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/SsPB7z3.jpg"
     },
     {
         "ID":"3",
@@ -98,7 +111,7 @@
                 "target-route":"Walk back"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/SsPB7z3.jpg"
     },
     {
         "ID":"4",
@@ -106,20 +119,14 @@
         "Title":"Bus stop",
         "Sub-Title":"He stabs you with a mysterious needle",
         "body":"Your head starts spinning and your vision becomes blurry.",
-        "effect":"BUGGING",
         "choices": [
             {
-                "text": "Taxi",
-                "target": "T1",
-                "target-route":"Taxi"
-            },
-            {
-                "text": "Walk back",
-                "target":"6",
-                "target-route":"Walk back"
+                "text": "Continue",
+                "target": "E4",
+                "target-route":"Died"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/SsPB7z3.jpg"
     },
     {
         "ID":"5",
@@ -141,7 +148,7 @@
                 "target-route":"Walk back"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/SsPB7z3.jpg"
     },
     {
         "ID":"6",
@@ -152,14 +159,35 @@
         "choices": [
             {
                 "text": "Continue",
-                "target": "P1",
-                "target-route":"Police"
+                "target": "PB0",
+                "target-route":"Police Luck"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
     },
     {
-        "ID":"P1",
+        "ID":"PB0",
+        "route":"Bear pit",
+        "Title":"Luck check",
+        "Sub-Title":"Pick a random option",
+        "body":"",
+        "choices": [
+            {
+                "text": "Random",
+                "target": "PB5",
+                "target-route":"Police Luck"
+            },
+            {
+                "text": "Random",
+                "target": "PB1",
+                "target-route":"Police Luck"
+            }
+        ],
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
+    },
+
+    {
+        "ID":"PB1",
         "route":"Police",
         "Title":"Police",
         "Sub-Title":"They roll down the window",
@@ -167,19 +195,19 @@
         "choices": [
             {
                 "text": "Home",
-                "target": "P2",
+                "target": "PB2",
                 "target-route":"Police"
             },
             {
                 "text":"Out",
-                "target":"P3",
+                "target":"PB3",
                 "target-route":"Police"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
     },
     {
-        "ID":"P2",
+        "ID":"PB2",
         "route":"Police",
         "Title":"Police",
         "Sub-Title":"They offer you a lift home",
@@ -187,34 +215,34 @@
         "choices": [
             {
                 "text": "Accept",
-                "target": "P4",
+                "target": "PB4",
                 "target-route":"Police"
             },
             {
                 "text":"Decline",
-                "target":"P3",
+                "target":"PB3",
                 "target-route":"Police"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
     },
     {
-        "ID":"P3",
+        "ID":"PB3",
         "route":"Police",
         "Title":"Police",
         "Sub-Title":"They wish you a good rest of your night",
         "body":"",
         "choices": [
             {
-                "text": "Continue (unlinked)",
-                "target": "",
-                "target-route":""
+                "text": "Continue ",
+                "target": "B1",
+                "target-route":"Bear pit "
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
     },
     {
-        "ID":"P4",
+        "ID":"PB4",
         "route":"Police",
         "Title":"Police",
         "Sub-Title":"You get in the back of the car",
@@ -226,10 +254,10 @@
                 "target-route":"End"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
     },
     {
-        "ID":"P5",
+        "ID":"PB5",
         "route":"Police-bugging",
         "Title":"Police",
         "Sub-Title":"They ask you if youve taken anything tonight",
@@ -237,19 +265,19 @@
         "choices": [
             {
                 "text": "Tell them about the homeless man",
-                "target": "p6",
+                "target": "PB6",
                 "target-route":"Police-bugging"
             },
             {
                 "text": "Lie",
-                "target": "p7",
+                "target": "PB7",
                 "target-route":"Police-bugging"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
     },
     {
-        "ID":"P6",
+        "ID":"PB6",
         "route":"Police-bugging",
         "Title":"Police",
         "Sub-Title":"They hop out the car to try and arrest you",
@@ -257,24 +285,24 @@
         "choices": [
             {
                 "text": "Co-operate",
-                "target": "p8",
+                "target": "PB8",
                 "target-route":"Police-bugging"
             },
             {
                 "text": "Fight them",
-                "target": "p9",
+                "target": "PB9",
                 "target-route":"Police-bugging"
             },
             {
                 "text": "Run Away",
-                "target": "p10",
+                "target": "PB10",
                 "target-route":"Police-bugging"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
     },
     {
-        "ID":"P7",
+        "ID":"PB7",
         "route":"Police-bugging",
         "Title":"Police",
         "Sub-Title":"They ask you where your going",
@@ -282,24 +310,24 @@
         "choices": [
             {
                 "text": "Out for the night",
-                "target": "p6",
+                "target": "PB6",
                 "target-route":"Police-bugging"
             },
             {
                 "text": "Home",
-                "target": "p11",
+                "target": "PB11",
                 "target-route":"Police-bugging"
             },
             {
                 "text": "Run Away",
-                "target": "p12",
+                "target": "PB12",
                 "target-route":"Police-bugging"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
     },
     {
-        "ID":"P8",
+        "ID":"PB8",
         "route":"Police",
         "Title":"Police",
         "Sub-Title":"You co-operate",
@@ -314,47 +342,47 @@
         "image":"d"
     },
     {
-        "ID":"P9",
+        "ID":"PB9",
         "route":"Police fight",
-        "Title":"Police",
-        "Sub-Title":"You prepare to fight the law (dice roll)",
+        "Title":"Police Fight",
+        "Sub-Title":"Pick a random option",
         "body":"",
         "choices": [
             {
-                "text": "if roll >3",
-                "target": "P13",
+                "text": "Random",
+                "target": "PB13",
                 "target-route":"police fight"
             },
             {
-                "text": "if roll <3",
-                "target": "P14",
+                "text": "Random",
+                "target": "PB14",
                 "target-route":"police fight"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
     },
     {
-        "ID":"P10",
+        "ID":"PB10",
         "route":"Police fight",
-        "Title":"Police",
-        "Sub-Title":"You run from the law (dice roll)",
+        "Title":"Police Run",
+        "Sub-Title":"You run from the law (Random)",
         "body":"",
         "choices": [
             {
-                "text": "if roll >3",
-                "target": "P16",
+                "text": "Random",
+                "target": "PB16",
                 "target-route":"police run"
             },
             {
-                "text": "if roll <3",
-                "target": "P15",
+                "text": "Random",
+                "target": "PB15",
                 "target-route":"police run"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
     },
     {
-        "ID":"P11",
+        "ID":"PB11",
         "route":"Police fight",
         "Title":"Police",
         "Sub-Title":"They offer you a lift home",
@@ -362,19 +390,19 @@
         "choices": [
             {
                 "text": "Accept",
-                "target": "P17",
+                "target": "PB17",
                 "target-route":"police"
             },
             {
                 "text": "Decline",
-                "target": "P6",
+                "target": "PB6",
                 "target-route":"police "
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
     },
     {
-        "ID":"P12",
+        "ID":"PB12",
         "route":"Police ",
         "Title":"Police",
         "Sub-Title":"Run away",
@@ -382,14 +410,14 @@
         "choices": [
             {
                 "text": "Continue(Unlinked)",
-                "target": "",
-                "target-route":""
+                "target": "B1",
+                "target-route":"Bear pit"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
     },
     {
-        "ID":"P13",
+        "ID":"PB13",
         "route":"Police fight",
         "Title":"Police FIGHT",
         "Sub-Title":"You fight the police officers",
@@ -401,10 +429,10 @@
                 "target-route":"End"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
     },
     {
-        "ID":"P14",
+        "ID":"PB14",
         "route":"Police car",
         "Title":"Police",
         "Sub-Title":"You fight the police officers",
@@ -416,10 +444,10 @@
                 "target-route":"End"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
     },
     {
-        "ID":"P15",
+        "ID":"PB15",
         "route":"Police run",
         "Title":"Police",
         "Sub-Title":"You run from the law",
@@ -431,25 +459,25 @@
                 "target-route":"End"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
     },
     {
-        "ID":"P16",
+        "ID":"PB16",
         "route":"Police run",
         "Title":"Police",
         "Sub-Title":"You run from the law",
         "body":"With your special powers from the mysterious need you manage to escape the police",
         "choices": [
             {
-                "text": "Continue(Unlinked)",
-                "target": "",
-                "target-route":""
+                "text": "Continue",
+                "target": "B1",
+                "target-route":"Bear pit"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
     },
     {
-        "ID":"P17",
+        "ID":"PB17",
         "route":"Police ",
         "Title":"Police",
         "Sub-Title":"You accept their offer",
@@ -461,26 +489,351 @@
                 "target-route":"End"
             }
         ],
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
+    },
+    {
+        "ID":"PT0",
+        "route":"Taxi Luck",
+        "Title":"Luck check",
+        "Sub-Title":"Pick a random option",
+        "body":"",
+        "choices": [
+            {
+                "text": "Random",
+                "target": "PT5",
+                "target-route":"Police Luck"
+            },
+            {
+                "text": "Random",
+                "target": "PT1",
+                "target-route":"Police Luck"
+            }
+        ],
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
+    },
+    {
+        "ID":"PT1",
+        "route":"Police",
+        "Title":"Police",
+        "Sub-Title":"They roll down the window",
+        "body":"They ask you where your heading",
+        "choices": [
+            {
+                "text": "Home",
+                "target": "PT2",
+                "target-route":"Police"
+            },
+            {
+                "text":"Out",
+                "target":"PT3",
+                "target-route":"Police"
+            }
+        ],
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
+    },
+    {
+        "ID":"PT2",
+        "route":"Police",
+        "Title":"Police",
+        "Sub-Title":"They offer you a lift home",
+        "body":"",
+        "choices": [
+            {
+                "text": "Accept",
+                "target": "PT4",
+                "target-route":"Police"
+            },
+            {
+                "text":"Decline",
+                "target":"PT3",
+                "target-route":"Police"
+            }
+        ],
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
+    },
+    {
+        "ID":"PT3",
+        "route":"Police",
+        "Title":"Police",
+        "Sub-Title":"They wish you a good rest of your night",
+        "body":"",
+        "choices": [
+            {
+                "text": "Continue",
+                "target": "E1",
+                "target-route":"End(arrive home)"
+            }
+        ],
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
+    },
+    {
+        "ID":"PT4",
+        "route":"Police",
+        "Title":"Police",
+        "Sub-Title":"You get in the back of the car",
+        "body":"They take you home and you arrive safely.",
+        "choices": [
+            {
+                "text": "Finish",
+                "target": "E1",
+                "target-route":"End"
+            }
+        ],
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
+    },
+    {
+        "ID":"PT5",
+        "route":"Police-bugging",
+        "Title":"Police",
+        "Sub-Title":"They ask you if youve taken anything tonight",
+        "body":"",
+        "choices": [
+            {
+                "text": "Tell them about the homeless man",
+                "target": "PT6",
+                "target-route":"Police-bugging"
+            },
+            {
+                "text": "Lie",
+                "target": "PT7",
+                "target-route":"Police-bugging"
+            }
+        ],
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
+    },
+    {
+        "ID":"PT6",
+        "route":"Police-bugging",
+        "Title":"Police",
+        "Sub-Title":"They hop out the car to try and arrest you",
+        "body":"",
+        "choices": [
+            {
+                "text": "Co-operate",
+                "target": "PT8",
+                "target-route":"Police-bugging"
+            },
+            {
+                "text": "Fight them",
+                "target": "PT9",
+                "target-route":"Police-bugging"
+            },
+            {
+                "text": "Run Away",
+                "target": "PT10",
+                "target-route":"Police-bugging"
+            }
+        ],
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
+    },
+    {
+        "ID":"PT7",
+        "route":"Police-bugging",
+        "Title":"Police",
+        "Sub-Title":"They ask you where your going",
+        "body":"",
+        "choices": [
+            {
+                "text": "Out for the night",
+                "target": "PT6",
+                "target-route":"Police-bugging"
+            },
+            {
+                "text": "Home",
+                "target": "PT11",
+                "target-route":"Police-bugging"
+            },
+            {
+                "text": "Run Away",
+                "target": "PT12",
+                "target-route":"Police-bugging"
+            }
+        ],
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
+    },
+    {
+        "ID":"PT8",
+        "route":"Police",
+        "Title":"Police",
+        "Sub-Title":"You co-operate",
+        "body":"They put you in handcuffs and in the back of the car .",
+        "choices": [
+            {
+                "text": "Finish",
+                "target": "E2",
+                "target-route":"End"
+            }
+        ],
         "image":"d"
+    },
+    {
+        "ID":"PT9",
+        "route":"Police fight",
+        "Title":"Police",
+        "Sub-Title":"You prepare to fight the law (Random)",
+        "body":"",
+        "choices": [
+            {
+                "text": "Random",
+                "target": "PT13",
+                "target-route":"police fight"
+            },
+            {
+                "text": "Random",
+                "target": "PT14",
+                "target-route":"police fight"
+            }
+        ],
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
+    },
+    {
+        "ID":"PT10",
+        "route":"Police fight",
+        "Title":"Police",
+        "Sub-Title":"You run from the law (Random)",
+        "body":"",
+        "choices": [
+            {
+                "text": "Random",
+                "target": "PT16",
+                "target-route":"police run"
+            },
+            {
+                "text": "Random",
+                "target": "PT15",
+                "target-route":"police run"
+            }
+        ],
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
+    },
+    {
+        "ID":"PT11",
+        "route":"Police fight",
+        "Title":"Police",
+        "Sub-Title":"They offer you a lift home",
+        "body":"",
+        "choices": [
+            {
+                "text": "Accept",
+                "target": "PT17",
+                "target-route":"police"
+            },
+            {
+                "text": "Decline",
+                "target": "PT6",
+                "target-route":"police "
+            }
+        ],
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
+    },
+    {
+        "ID":"PT12",
+        "route":"Police ",
+        "Title":"Police",
+        "Sub-Title":"Run away",
+        "body":"You have escaped",
+        "choices": [
+            {
+                "text": "Continue",
+                "target": "E1",
+                "target-route":"End(arrive home)"
+            }
+        ],
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
+    },
+    {
+        "ID":"PT13",
+        "route":"Police fight",
+        "Title":"Police FIGHT",
+        "Sub-Title":"You fight the police officers",
+        "body":"You swing for them and miss. You slip and fall to the ground. You have been arrested",
+        "choices": [
+            {
+                "text": "Continue",
+                "target": "E2",
+                "target-route":"End"
+            }
+        ],
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
+    },
+    {
+        "ID":"PT14",
+        "route":"Police car",
+        "Title":"Police",
+        "Sub-Title":"You fight the police officers",
+        "body":"With a single strike you knock out the first police officer. The other runs towards you. You headbutt him and rob his car keys. In your wavy state you get behind the wheel and attempt to drive home. Suddenly Trinity academy jumps out infront of you and you crash through the front gates. You stumble out of the car and drag yourself the rest of the way home.",
+        "choices": [
+            {
+                "text": "Continue",
+                "target": "E1",
+                "target-route":"End"
+            }
+        ],
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
+    },
+    {
+        "ID":"PT15",
+        "route":"Police run",
+        "Title":"Police",
+        "Sub-Title":"You run from the law",
+        "body":"A pole appears infront of you as you run straight into it. The police catch up to you and arrest you",
+        "choices": [
+            {
+                "text": "Continue",
+                "target": "E2",
+                "target-route":"End"
+            }
+        ],
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
+    },
+    {
+        "ID":"PT16",
+        "route":"Police run",
+        "Title":"Police",
+        "Sub-Title":"You run from the law",
+        "body":"With your special powers from the mysterious need you manage to escape the police",
+        "choices": [
+            {
+                "text": "Continue",
+                "target": "E1",
+                "target-route":"End(arrive home)"
+            }
+        ],
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
+    },
+    {
+        "ID":"PT17",
+        "route":"Police ",
+        "Title":"Police",
+        "Sub-Title":"You accept their offer",
+        "body":"In your blurry state you have fallen for the simplest trick in the book. You have been arrested.",
+        "choices": [
+            {
+                "text": "Continue",
+                "target": "E2",
+                "target-route":"End"
+            }
+        ],
+        "image":"https://i.imgur.com/wuHpX1v.jpg"
     },    
     {
         "ID":"B1",
         "route":"Bear pit",
         "Title":"Bear pit",
         "Sub-Title":"You walk into the Bear pit",
-        "body":"A group of people approach you (Dice roll)",
+        "body":"A group of people approach you (Random)",
         "choices": [
             {
-                "text": "if roll >3",
+                "text": "Random",
                 "target": "B2",
                 "target-route":"Bear pit friends"
             },            {
-                "text": "if roll <3",
+                "text": "Random",
                 "target": "BM1",
                 "target-route":"Badman encounter"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/ohQbFZC.jpg"
     },
     {
         "ID":"B2",
@@ -499,7 +852,7 @@
                 "target-route":"Bear pit"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/ohQbFZC.jpg"
     },
     {
         "ID":"B3",
@@ -514,7 +867,7 @@
                 "target-route":"end (party rest of the night away)"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/ohQbFZC.jpg"
     },
     {
         "ID":"B4",
@@ -533,7 +886,7 @@
                 "target-route":"Stokes croft"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/ohQbFZC.jpg"
     },
     {
         "ID":"B5",
@@ -552,7 +905,7 @@
                 "target-route":"Turbo Island"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/XbOwktj.jpg"
     },
     {
         "ID":"B6",
@@ -567,7 +920,7 @@
                 "target-route":"End(arrive home)"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/XbOwktj.jpg"
     },
     {
         "ID":"B7",
@@ -582,10 +935,10 @@
                 "target-route":"end (party rest of the night away)"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/XbOwktj.jpg"
     },
     {
-        "ID":"BM1",
+        "ID":"BMB1",
         "route":"badman encounter",
         "Title":"Badman encounter",
         "Sub-Title":"A shadowy figure appears behind you",
@@ -593,23 +946,23 @@
         "choices": [
             {
                 "text": "Fight him",
-                "target": "BM2",
+                "target": "BMB2",
                 "target-route":"Badman Fight"
             },   
             {
                 "text": "Give him your stuff {If bugging}",
-                "target": "BM3",
+                "target": "BMB3",
                 "target-route":"Badman end"
             },            {
                 "text": "Yes",
-                "target": "BM4",
+                "target": "BMB4",
                 "target-route":"Badman run"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/h65PfBR.jpg"
     },
     {
-        "ID":"BM2",
+        "ID":"BMB2",
         "route":"Badman Fight",
         "Title":"Badman Fight",
         "Sub-Title":"",
@@ -617,19 +970,19 @@
         "choices": [
             {
                 "text": "Yes",
-                "target": "BM5",
+                "target": "BMB5",
                 "target-route":"Badman Needle"
             },   
             {
                 "text": "Yes",
-                "target": "BM6",
+                "target": "BMB6",
                 "target-route":"Badman Fight"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/h65PfBR.jpg"
     },
     {
-        "ID":"BM3",
+        "ID":"BMB3",
         "route":"badman End",
         "Title":"Badman encounter",
         "Sub-Title":"You give him your stuff",
@@ -637,84 +990,243 @@
         "choices": [
             {
                 "text": "Continue",
-                "target": "CCurrent path",
-                "target-route":"Current path"
+                "target": "B4",
+                "target-route":"bear pit"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/h65PfBR.jpg"
     },
     {
-        "ID":"BM4",
+        "ID":"BMB4",
         "route":"badman run",
         "Title":"Badman encounter",
         "Sub-Title":"You try to run",
-        "body":"{Diceroll }",
+        "body":"Random",
         "choices": [
             {
-                "text": "roll >3",
-                "target": "BM10",
+                "text": "Random",
+                "target": "BMB10",
                 "target-route":"Badman escape"
             },   
             {
-                "text": "if roll <3",
-                "target": "BM9",
+                "text": "Random",
+                "target": "BMB9",
                 "target-route":"Badman slip"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/h65PfBR.jpg"
     },
     {
-        "ID":"BM5",
-        "route":"badman needle ",
-        "Title":"Badman Fight",
-        "Sub-Title":"You stab him with the needle",
-        "body":"He spontaniously combusts into a cloud of glitter",
-        "choices": [
-            {
-                "text": "Continue (unlinked)",
-                "target": "Current path",
-                "target-route":"Current path"
-            }
-        ],
-        "image":"d"
-    },
-    {
-        "ID":"BM6",
+        "ID":"BMB6",
         "route":"badman encounter",
         "Title":"Badman encounter",
         "Sub-Title":"",
-        "body":"{Diceroll }",
+        "body":"Random",
         "choices": [
             {
-                "text": "if roll >3",
+                "text": "Random",
                 "target": "BM7",
                 "target-route":"Badman Fight win"
             },   
             {
-                "text": "if roll <3",
-                "target": "BM8",
+                "text": "Random",
+                "target": "BMB8",
                 "target-route":"Badman fight lose"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/h65PfBR.jpg"
     },
     {
-        "ID":"BM7",
+        "ID":"BMB7",
         "route":"badman Fight win",
         "Title":"Badman encounter",
         "Sub-Title":"You headbutt him",
         "body":"He Cries and runs away",
         "choices": [
             {
-                "text": "Continue (unlinked)",
-                "target": "Current path",
-                "target-route":"Current path"
+                "text": "Continue",
+                "target": "B4",
+                "target-route":"Bear pit"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/h65PfBR.jpg"
     },
     {
-        "ID":"BM8",
+        "ID":"BMB8",
+        "route":"badman Fight Lose",
+        "Title":"Badman encounter",
+        "Sub-Title":"You swing for him and miss",
+        "body":"He slaps you",
+        "choices": [
+            {
+                "text": "Continue",
+                "target": "BMB3",
+                "target-route":"Badman end"
+            }
+        ],
+        "image":"https://i.imgur.com/h65PfBR.jpg"
+    },
+    {
+        "ID":"BMB9",
+        "route":"badman slip",
+        "Title":"Badman encounter",
+        "Sub-Title":"You slip and fall",
+        "body":"",
+        "choices": [
+            {
+                "text": "Continue",
+                "target": "BMB3",
+                "target-route":"Badman end"
+            }
+        ],
+        "image":"https://i.imgur.com/h65PfBR.jpg"
+    },
+    {
+        "ID":"BMB10",
+        "route":"badman Fight Lose",
+        "Title":"Badman encounter",
+        "Sub-Title":"You swing for him and miss",
+        "body":"He slaps you",
+        "choices": [
+            {
+                "text": "Continue",
+                "target": "B4",
+                "target-route":"bear pit"
+            }
+        ],
+        "image":"https://i.imgur.com/h65PfBR.jpg"
+    },
+    {
+        "ID":"BMT1",
+        "route":"badman encounter",
+        "Title":"Badman encounter",
+        "Sub-Title":"A shadowy figure appears behind you",
+        "body":"They pull a knife and ask you for your possessions. {Is bugging?}",
+        "choices": [
+            {
+                "text": "Fight him",
+                "target": "BMT2",
+                "target-route":"Badman Fight"
+            },   
+            {
+                "text": "Give him your stuff {If bugging}",
+                "target": "BMT3",
+                "target-route":"Badman end"
+            },            {
+                "text": "Yes",
+                "target": "BMT4",
+                "target-route":"Badman run"
+            }
+        ],
+        "image":"https://i.imgur.com/h65PfBR.jpg"
+    },
+    {
+        "ID":"BMT2",
+        "route":"Badman Fight",
+        "Title":"Badman Fight",
+        "Sub-Title":"",
+        "body":"{Has Mysterious Needle?}",
+        "choices": [
+            {
+                "text": "Yes",
+                "target": "BMT5",
+                "target-route":"Badman Needle"
+            },   
+            {
+                "text": "Yes",
+                "target": "BMT6",
+                "target-route":"Badman Fight"
+            }
+        ],
+        "image":"https://i.imgur.com/h65PfBR.jpg"
+    },
+    {
+        "ID":"BMT3",
+        "route":"badman End",
+        "Title":"Badman encounter",
+        "Sub-Title":"You give him your stuff",
+        "body":"You hand over your phone and wallet {Continue on path}",
+        "choices": [
+            {
+                "text": "Continue",
+                "target": "E1",
+                "target-route":"End(arrive home)"
+            }
+        ],
+        "image":"https://i.imgur.com/h65PfBR.jpg"
+    },
+    {
+        "ID":"BMT4",
+        "route":"badman run",
+        "Title":"Badman encounter",
+        "Sub-Title":"You try to run",
+        "body":"Random",
+        "choices": [
+            {
+                "text": "Random",
+                "target": "BMT10",
+                "target-route":"Badman escape"
+            },   
+            {
+                "text": "Random",
+                "target": "BMT9",
+                "target-route":"Badman slip"
+            }
+        ],
+        "image":"https://i.imgur.com/h65PfBR.jpg"
+    },
+    {
+        "ID":"BMT5",
+        "route":"badman needle ",
+        "Title":"Badman Fight",
+        "Sub-Title":"You stab him with the needle",
+        "body":"He spontaniously combusts into a cloud of glitter",
+        "choices": [
+            {
+                "text": "Continue",
+                "target": "E1",
+                "target-route":"End(arrive home)"
+            }
+        ],
+        "image":"https://i.imgur.com/h65PfBR.jpg"
+    },
+    {
+        "ID":"BMT6",
+        "route":"badman encounter",
+        "Title":"Badman encounter",
+        "Sub-Title":"",
+        "body":"Badman fight (Random)",
+        "choices": [
+            {
+                "text": "Random",
+                "target": "BM7",
+                "target-route":"Badman Fight win"
+            },   
+            {
+                "text": "Random",
+                "target": "BM8",
+                "target-route":"Badman fight lose"
+            }
+        ],
+        "image":"https://i.imgur.com/h65PfBR.jpg"
+    },
+    {
+        "ID":"BMT7",
+        "route":"badman Fight win",
+        "Title":"Badman encounter",
+        "Sub-Title":"You headbutt him",
+        "body":"He Cries and runs away",
+        "choices": [
+            {
+                "text": "Continue",
+                "target": "E1",
+                "target-route":"End(arrive home)"
+            }
+        ],
+        "image":"https://i.imgur.com/h65PfBR.jpg"
+    },
+    {
+        "ID":"BMT8",
         "route":"badman Fight Lose",
         "Title":"Badman encounter",
         "Sub-Title":"You swing for him and miss",
@@ -726,10 +1238,10 @@
                 "target-route":"Badman end"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/h65PfBR.jpg"
     },
     {
-        "ID":"BM9",
+        "ID":"BMT9",
         "route":"badman slip",
         "Title":"Badman encounter",
         "Sub-Title":"You slip and fall",
@@ -741,22 +1253,22 @@
                 "target-route":"Badman end"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/h65PfBR.jpg"
     },
     {
-        "ID":"BM10",
+        "ID":"BMT10",
         "route":"badman Fight Lose",
         "Title":"Badman encounter",
         "Sub-Title":"You swing for him and miss",
         "body":"He slaps you",
         "choices": [
             {
-                "text": "Continue (unlinked)",
+                "text": "Continue",
                 "target": "CCurrent path",
                 "target-route":"Current path"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/h65PfBR.jpg"
     },
     {
         "ID":"T1",
@@ -766,86 +1278,54 @@
         "body":"You tell him your heading to Lockleaze and get in the back of the Taxi {is bugging}",
         "choices": [
             {
-                "text": "{Bugging}",
-                "target": "T4",
-                "target-route":"Taxi kicked out"
-            },
-            {
-                "text": "{Not Bugging}",
+                "text": "Continue ",
                 "target": "T2",
                 "target-route":"Taxi"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/6NgLgyl.jpg"
     },   
     {
         "ID":"T2",
         "route":"Taxi",
         "Title":"Taxi",
         "Sub-Title":"You arrive at your destination",
-        "body":"The driver asks you to pay {is balance <£10}",
+        "body":"The driver asks you to pay ",
         "choices": [
             {
-                "text": "{Balance >£10}",
+                "text": "Yes",
                 "target": "T3",
                 "target-route":"Taxi "
             },
             {
-                "text": "{Balance <£10}",
+                "text": "No",
                 "target": "T4",
                 "target-route":"Taxi kicked out"
             }
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/6NgLgyl.jpg"
     },
     {
         "ID":"T4",
         "route":"Taxi Kicked out",
         "Title":"Taxi",
         "Sub-Title":"The taxi driver locks the doors",
-        "body":"He takes you to Gainsbrough square before he kicks you out {Dice roll}",
+        "body":"He takes you to Gainsbrough square before he kicks you out (Random)",
         "choices": [
             {
-                "text": "if roll >3",
-                "target": "P1",
-                "target-route":"Police)"
+                "text": "Random",
+                "target": "PT0",
+                "target-route":"Police"
             },
             {
-                "text": "if roll <3",
-                "target": "BM1",
+                "text": "Random",
+                "target": "BMT1",
                 "target-route":"Badman encounter"
             }
             
         ],
-        "image":"d"
+        "image":"https://i.imgur.com/6NgLgyl.jpg"
     }
-    
-    
-    
-    
 
-    
-
-    
-
-
-    
-
-
-
-    
-
-
-    
-    
-    
-    
-    
-
-
-
-
-
-    
 ]
 }

@@ -29,11 +29,9 @@ const Story = () => {
 
     <div style={{ position: 'relative', width: '100vw', height: '100vh' ,display: 'flex', justifyContent:'center',alignItems:'center'}}>
     <picture>
-        /*a */
         <source srcSet={currentScene.image} media="(min-width: 1024px)" />
         <source srcSet={currentScene.image} media="(min-width: 768px)" />
         <img
-        src="/photos/floating harbour.jpg"
         style={{
             position: 'absolute',
             top: -1,
@@ -56,6 +54,9 @@ const Story = () => {
 
   }}>
     <div className="story-container">
+      <h1>ID:{currentScene.ID}</h1> {/*Temp*/}
+      <h1>Effect: {currentScene.effect}</h1>{/*Temp*/}
+      <h1>Money:{currentScene.money}</h1>{/*Temp*/}
       <h2>{currentScene.Title}</h2>
       <h3>{currentScene["Sub-Title"]}</h3> {/* Use bracket notation for keys with hyphens */}
       <p>{currentScene.body}</p>
