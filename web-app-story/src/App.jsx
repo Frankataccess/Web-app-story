@@ -29,8 +29,8 @@ const Story = () => {
 
     <div style={{ position: 'relative', width: '100vw', height: '100vh' ,display: 'flex', justifyContent:'center',alignItems:'center'}}>
     <picture>
-        <source srcSet={currentScene.image} media="(min-width: 1024px)" />
-        <source srcSet={currentScene.image} media="(min-width: 768px)" />
+        <source srcSet={currentScene.image}  />
+        <source srcSet={currentScene.image}  />
         <img
         style={{
             position: 'absolute',
@@ -53,10 +53,13 @@ const Story = () => {
       flexDirection:"column",
 
   }}>
-    <div className="story-container">
-      <h1>ID:{currentScene.ID}</h1> {/*Temp*/}
-      <h1>Effect: {currentScene.effect}</h1>{/*Temp*/}
-      <h1>Money:{currentScene.money}</h1>{/*Temp*/}
+    <div className="story-container"
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        textAlign: 'center',
+      }}>
       <h2>{currentScene.Title}</h2>
       <h3>{currentScene["Sub-Title"]}</h3> {/* Use bracket notation for keys with hyphens */}
       <p>{currentScene.body}</p>

@@ -4,7 +4,7 @@
         "ID":"E1",
         "route":"home safely",
         "Title":"You have arrived home safely",
-        "Sub-Title":"",
+        "Sub-Title":" Good Ending ",
         "body":"",
         "choices": [
 
@@ -15,7 +15,7 @@
         "ID":"E2",
         "route":"Arrested",
         "Title":"You have been arrested",
-        "Sub-Title":"",
+        "Sub-Title":"Bad Ending",
         "body":"",
         "choices": [
 
@@ -26,7 +26,7 @@
         "ID":"E3",
         "route":"party the night away",
         "Title":"You Party the rest of the night away",
-        "Sub-Title":"",
+        "Sub-Title":"True Ending",
         "body":"",
         "choices": [
 
@@ -37,7 +37,7 @@
         "ID":"E4",
         "route":"Dead",
         "Title":"YOU DIED",
-        "Sub-Title":"",
+        "Sub-Title":"Noob ending",
         "body":"",
         "choices": [
 
@@ -409,7 +409,7 @@
         "body":"You have escaped",
         "choices": [
             {
-                "text": "Continue(Unlinked)",
+                "text": "Continue",
                 "target": "B1",
                 "target-route":"Bear pit"
             }
@@ -466,7 +466,7 @@
         "route":"Police run",
         "Title":"Police",
         "Sub-Title":"You run from the law",
-        "body":"With your special powers from the mysterious need you manage to escape the police",
+        "body":"You flee like a coward",
         "choices": [
             {
                 "text": "Continue",
@@ -791,7 +791,7 @@
         "route":"Police run",
         "Title":"Police",
         "Sub-Title":"You run from the law",
-        "body":"With your special powers from the mysterious need you manage to escape the police",
+        "body":"You flee like a coward",
         "choices": [
             {
                 "text": "Continue",
@@ -829,7 +829,7 @@
                 "target-route":"Bear pit friends"
             },            {
                 "text": "Random",
-                "target": "BM1",
+                "target": "BMB1",
                 "target-route":"Badman encounter"
             }
         ],
@@ -862,7 +862,7 @@
         "body":"They head into the center of bristol to party the rest of the night away",
         "choices": [
             {
-                "text": "Continue (unlinked)",
+                "text": "Continue ",
                 "target": "E3",
                 "target-route":"end (party rest of the night away)"
             }
@@ -874,15 +874,11 @@
         "route":"Stokes croft",
         "Title":"Stokes croft",
         "Sub-Title":"You head your separate ways",
-        "body":"{Is bugging?}",
+        "body":"The night grows cold and dark",
         "choices": [
             {
-                "text": "No",
+                "text": "Continue",
                 "target": "B5",
-                "target-route":"Stokes croft"
-            },            {
-                "text": "Yes",
-                "target": "B7",
                 "target-route":"Stokes croft"
             }
         ],
@@ -930,7 +926,7 @@
         "body":"The ETERNAL BIN FIRE provides you with warmth. The peace is disturbed by a green coach that pulls up. The bottom of the coach oppens up to reveal a set of speakers. THE RAVE BUS HAS ARRIVED!",
         "choices": [
             {
-                "text": "Continue (unlinked)",
+                "text": "Continue ",
                 "target": "E3",
                 "target-route":"end (party rest of the night away)"
             }
@@ -942,7 +938,7 @@
         "route":"badman encounter",
         "Title":"Badman encounter",
         "Sub-Title":"A shadowy figure appears behind you",
-        "body":"They pull a knife and ask you for your possessions. {Is bugging?}",
+        "body":"They pull a knife and ask you for your possessions. ",
         "choices": [
             {
                 "text": "Fight him",
@@ -950,11 +946,11 @@
                 "target-route":"Badman Fight"
             },   
             {
-                "text": "Give him your stuff {If bugging}",
+                "text": "Give him your stuff ",
                 "target": "BMB3",
                 "target-route":"Badman end"
             },            {
-                "text": "Yes",
+                "text": "Run",
                 "target": "BMB4",
                 "target-route":"Badman run"
             }
@@ -966,15 +962,10 @@
         "route":"Badman Fight",
         "Title":"Badman Fight",
         "Sub-Title":"",
-        "body":"{Has Mysterious Needle?}",
+        "body":"You prepare to fight him",
         "choices": [
             {
-                "text": "Yes",
-                "target": "BMB5",
-                "target-route":"Badman Needle"
-            },   
-            {
-                "text": "Yes",
+                "text": "Continue",
                 "target": "BMB6",
                 "target-route":"Badman Fight"
             }
@@ -1083,10 +1074,10 @@
     },
     {
         "ID":"BMB10",
-        "route":"badman Fight Lose",
+        "route":"badman run",
         "Title":"Badman encounter",
-        "Sub-Title":"You swing for him and miss",
-        "body":"He slaps you",
+        "Sub-Title":"You run for your life",
+        "body":"He gives chase but eventually gives up",
         "choices": [
             {
                 "text": "Continue",
@@ -1101,7 +1092,7 @@
         "route":"badman encounter",
         "Title":"Badman encounter",
         "Sub-Title":"A shadowy figure appears behind you",
-        "body":"They pull a knife and ask you for your possessions. {Is bugging?}",
+        "body":"They pull a knife and ask you for your possessions. ",
         "choices": [
             {
                 "text": "Fight him",
@@ -1109,11 +1100,11 @@
                 "target-route":"Badman Fight"
             },   
             {
-                "text": "Give him your stuff {If bugging}",
+                "text": "Give him your stuff ",
                 "target": "BMT3",
                 "target-route":"Badman end"
             },            {
-                "text": "Yes",
+                "text": "Run",
                 "target": "BMT4",
                 "target-route":"Badman run"
             }
@@ -1125,15 +1116,13 @@
         "route":"Badman Fight",
         "Title":"Badman Fight",
         "Sub-Title":"",
-        "body":"{Has Mysterious Needle?}",
+        "body":"You prepare to fight him",
         "choices": [
             {
-                "text": "Yes",
-                "target": "BMT5",
-                "target-route":"Badman Needle"
+
             },   
             {
-                "text": "Yes",
+                "text": "Continue",
                 "target": "BMT6",
                 "target-route":"Badman Fight"
             }
@@ -1175,21 +1164,7 @@
         ],
         "image":"https://i.imgur.com/h65PfBR.jpg"
     },
-    {
-        "ID":"BMT5",
-        "route":"badman needle ",
-        "Title":"Badman Fight",
-        "Sub-Title":"You stab him with the needle",
-        "body":"He spontaniously combusts into a cloud of glitter",
-        "choices": [
-            {
-                "text": "Continue",
-                "target": "E1",
-                "target-route":"End(arrive home)"
-            }
-        ],
-        "image":"https://i.imgur.com/h65PfBR.jpg"
-    },
+
     {
         "ID":"BMT6",
         "route":"badman encounter",
@@ -1260,7 +1235,7 @@
         "route":"badman run",
         "Title":"Badman encounter",
         "Sub-Title":"You run away",
-        "body":"",
+        "body":"He gives chase but gives up",
         "choices": [
             {
                 "text": "Continue",
@@ -1294,7 +1269,7 @@
         "choices": [
             {
                 "text": "Yes",
-                "target": "T3",
+                "target": "E1",
                 "target-route":"Taxi "
             },
             {
