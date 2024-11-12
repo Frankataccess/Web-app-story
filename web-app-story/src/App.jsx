@@ -1,5 +1,8 @@
+
 import React, { useState, useEffect } from "react";
 import Data from './story.json';
+
+
 
 const Story = () => {
 
@@ -40,6 +43,7 @@ const Story = () => {
             height: '100%',
             objectFit: 'cover',
             
+            
         }}
         />
     </picture>
@@ -51,6 +55,7 @@ const Story = () => {
       height: '60vh',
       display: "flex",
       flexDirection:"column",
+      borderRadius: '25px',
 
   }}>
     <div className="story-container"
@@ -59,16 +64,43 @@ const Story = () => {
         flexDirection: 'column',
         alignItems: 'center',
         textAlign: 'center',
+        padding:'20px',
+        height:'100%',
       }}>
-      <h2>{currentScene.Title}</h2>
-      <h3>{currentScene["Sub-Title"]}</h3> {/* Use bracket notation for keys with hyphens */}
-      <p>{currentScene.body}</p>
+      <h2 
+      style={{
+        fontSize:'40px',
+        fontFamily:'Helvetica'
+      }}>{currentScene.Title}</h2>
+      <h3 
+      style={{
+        fontSize:'30px',
+        fontFamily:'Helvetica'
+      }}>{currentScene["Sub-Title"]}</h3> 
+      <p 
+      style={{
+        flexGrow:'1',
+        fontSize:'22px'
+        }}>{currentScene.body}</p>
 
 
 
-      <div className="choices">
+      <div className="choices" 
+      style={{
+        display:'flex',
+        gap:'50px',
+        width: "100%",
+        maxWidth:'750px',
+        }}>
         {currentScene.choices.map((choice, index) => (
-          <button key={index} onClick={() => handleOptionClick(choice.target)}>
+          <button key={index} onClick={() => handleOptionClick(choice.target)}
+          style={{
+            flex: '1',
+            height:'100px',
+            borderRadius:'15px',
+            fontSize:'22px',
+            hover:"black",
+          }}>
             {choice.text}
           </button>
         ))}

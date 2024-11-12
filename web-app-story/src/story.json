@@ -1116,11 +1116,9 @@
         "route":"Badman Fight",
         "Title":"Badman Fight",
         "Sub-Title":"",
-        "body":"You prepare to fight him",
-        "choices": [
-            {
-
-            },   
+        "body":"You prepare to fight him ",
+        "choices": 
+        [
             {
                 "text": "Continue",
                 "target": "BMT6",
@@ -1134,7 +1132,7 @@
         "route":"badman End",
         "Title":"Badman encounter",
         "Sub-Title":"You give him your stuff",
-        "body":"You hand over your phone and wallet {Continue on path}",
+        "body":"You hand over your phone and wallet ",
         "choices": [
             {
                 "text": "Continue",
@@ -1174,12 +1172,12 @@
         "choices": [
             {
                 "text": "Random",
-                "target": "BM7",
+                "target": "BMT7",
                 "target-route":"Badman Fight win"
             },   
             {
                 "text": "Random",
-                "target": "BM8",
+                "target": "BMT8",
                 "target-route":"Badman fight lose"
             }
         ],
@@ -1209,7 +1207,7 @@
         "choices": [
             {
                 "text": "Continue",
-                "target": "BM3",
+                "target": "BMT3",
                 "target-route":"Badman end"
             }
         ],
@@ -1224,7 +1222,7 @@
         "choices": [
             {
                 "text": "Continue",
-                "target": "BM3",
+                "target": "BMT3",
                 "target-route":"Badman end"
             }
         ],
@@ -1250,7 +1248,7 @@
         "route":"Taxi",
         "Title":"Taxi",
         "Sub-Title":"You hail a Taxi",
-        "body":"You tell him your heading to Lockleaze and get in the back of the Taxi {is bugging}",
+        "body":"You tell him your heading to Lockleaze and get in the back of the Taxi ",
         "choices": [
             {
                 "text": "Continue ",
