@@ -99,7 +99,7 @@ const Story = () => {
             height:'100px',
             borderRadius:'15px',
             fontSize:'22px',
-            hover:"black",
+            
           }}>
             {choice.text}
           </button>
