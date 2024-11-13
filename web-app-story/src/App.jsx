@@ -30,7 +30,13 @@ const Story = () => {
 
   return (
 
-    <div style={{ position: 'relative', width: '100vw', height: '100vh' ,display: 'flex', justifyContent:'center',alignItems:'center'}}>
+    <div style={{ 
+      position: 'relative', 
+      width: '100vw', 
+      height: '100vh' ,display: 'flex', 
+      justifyContent:'center',
+      alignItems:'center'
+      }}>
     <picture>
         <source srcSet={currentScene.image}  />
         <source srcSet={currentScene.image}  />
@@ -100,7 +106,6 @@ const Story = () => {
             height:'100px',
             borderRadius:'15px',
             fontSize:'22px',
-            minWidth: '200px'
           }}>
             {choice.text}
           </button>
