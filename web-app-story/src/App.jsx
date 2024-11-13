@@ -91,6 +91,7 @@ const Story = () => {
         gap:'50px',
         width: "100%",
         maxWidth:'750px',
+
         }}>
         {currentScene.choices.map((choice, index) => (
           <button key={index} onClick={() => handleOptionClick(choice.target)}
@@ -99,7 +100,7 @@ const Story = () => {
             height:'100px',
             borderRadius:'15px',
             fontSize:'22px',
-            
+            minWidth: '200px'
           }}>
             {choice.text}
           </button>

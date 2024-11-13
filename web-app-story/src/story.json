@@ -132,9 +132,8 @@
         "ID":"5",
         "route":"Bus Stop fight",
         "Title":"Bus stop",
-        "Sub-Title":"You threaten him. He stabs you with a mysterious needle",
-        "body":"you headbut the homeless man and take his money. You have gained £1.24 Your head starts spinning and your vision becomes blurry.",
-        "effect":"BUGGING",
+        "Sub-Title":"You threaten him.",
+        "body":"you headbut the homeless man and take his money. You have gained £1.24.",
         "money":11.24,
         "choices": [
             {
@@ -190,8 +189,8 @@
         "ID":"PB1",
         "route":"Police",
         "Title":"Police",
-        "Sub-Title":"They roll down the window",
-        "body":"They ask you where your heading",
+        "Sub-Title":"They ask you where your heading",
+        "body":"",
         "choices": [
             {
                 "text": "Home",
@@ -888,8 +887,8 @@
         "ID":"B5",
         "route":"Stokes croft",
         "Title":"Stokes croft",
-        "Sub-Title":"Your legs feel tired",
-        "body":"Do you take a rest",
+        "Sub-Title":"You walk up stokes croft ",
+        "body":"Your legs feel tired, do you take a rest",
         "choices": [
             {
                 "text": "No",
@@ -923,7 +922,7 @@
         "route":"Turbo island",
         "Title":"Turbo Island",
         "Sub-Title":"You take a seat at Turbo Island ",
-        "body":"The ETERNAL BIN FIRE provides you with warmth. The peace is disturbed by a green coach that pulls up. The bottom of the coach oppens up to reveal a set of speakers. THE RAVE BUS HAS ARRIVED!",
+        "body":"The ETERNAL BIN FIRE provides you with warmth. The peace is disturbed by a green coach that pulls up. The bottom of the coach opens up to reveal a set of speakers. THE RAVE BUS HAS ARRIVED!",
         "choices": [
             {
                 "text": "Continue ",
@@ -931,7 +930,7 @@
                 "target-route":"end (party rest of the night away)"
             }
         ],
-        "image":"https://i.imgur.com/XbOwktj.jpg"
+        "image":"https://i.imgur.com/KQi534S.jpg"
     },
     {
         "ID":"BMB1",
@@ -981,7 +980,7 @@
         "choices": [
             {
                 "text": "Continue",
-                "target": "B4",
+                "target": "B5",
                 "target-route":"bear pit"
             }
         ],
@@ -1036,7 +1035,7 @@
         "choices": [
             {
                 "text": "Continue",
-                "target": "B4",
+                "target": "B5",
                 "target-route":"Bear pit"
             }
         ],
@@ -1081,7 +1080,7 @@
         "choices": [
             {
                 "text": "Continue",
-                "target": "B4",
+                "target": "B5",
                 "target-route":"bear pit"
             }
         ],
