@@ -1,12 +1,25 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
-import Menu from './menu.jsx'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Menu from './menu';
+import App from './App';
+import Endings from './endings';
 
+const Main = () => {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Menu />} />
+        <Route path="/App" element={<App />} />
+        <Route path="/Endings" element={<Endings />} />
+      </Routes>
+    </Router>
+  );
+};
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <Menu />
-    {/* <App /> */}
-  </StrictMode>,
-)
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <Main />
+  </React.StrictMode>
+);

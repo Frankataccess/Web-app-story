@@ -1,8 +1,12 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import App from './App.jsx';
+import Endings from './endings.jsx';
+
 const Menu = () => {
 
-    document.body.style.margin = '0'; // Reset body margin
-    document.body.style.padding = '0'; // Reset body padding
-
+    document.body.style.margin = '0';
+    document.body.style.padding = '0';
 
     return ( 
         <div 
@@ -12,54 +16,116 @@ const Menu = () => {
             height: '100vh' ,
             display: 'flex', 
             justifyContent:'center',
-            alignItems:'center'}}>
-        <picture>
-            <source srcSet="https://i.imgur.com/rkr1dmk.jpg"  />
-            <img
-            style={{
-                position: 'absolute',
-                top: -1,
-                left: -1,
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-                
-                
-            }}
-            />
-        </picture>
-
-            <div
-            style={{
-                backgroundColor: 'rgba(255, 255, 255, 0.5)',
-                position: 'relative',
-                width: '70vw',
-                height: '95vh',
-                display: "flex",
-                flexDirection:"column",
-                borderRadius: '25px',
-                alignItems:'center'
-            }}
-            ><div style={{
-                display:'flex',
-                flexDirection:'column',
-                borderRadius:'25px',
-                height:'20vh',
-                width:'60vw',
-                gap:'0.2vh',
+            alignItems:'center',
+            backgroundImage: 'url("https://i.imgur.com/GuVp0O6.jpg")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
             }}>
-                <div >Title</div>
-                    <button style={{ height: '50px', width: '100%' }}>Start</button>
-                    <button style={{ height: '50px', width: '100%' }}>Settings</button>
-                    <button style={{ height: '50px', width: '100%' }}>Github</button>
-                </div>
-            </div>
-            
+        
+
+        <div
+        style={{
+        backgroundColor: 'rgba(255, 255, 255, 0.5)',
+        position: 'relative',
+        width: '70vw',
+        height: '95vh',
+        display: "flex",
+        flexDirection: "column",
+        borderRadius: '25px',
+        alignItems: 'center',
+        overflow: 'hidden',
+        }}
+        >
+        <div
+            style={{
+            padding: '3vh',
+            display: 'flex',
+            flexDirection: 'column',
+            width: '60vw',
+            gap: '3vh',
+            fontFamily: 'Helvetica',
+            fontSize: '24px',
+            }}
+        >
+        <div
+        style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            textAlign: 'center',
+            height: '20vh',
+            width: '100%',
+            border: 'none',
+            borderRadius: '12.5px',
+            color:'white',
+            backgroundImage: 'url("https://i.imgur.com/JigIQj9.gif")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+        }}
+        >
+        Night out in
+        <p
+        style={{
+        fontSize: '30px',
+        color: 'red',
+    }}
+>
+    &nbsp;BRISTOL
+</p>
         </div>
+        <Link to="/App">
+            <button
+            style={{
+                height: '20vh',
+                width: '100%',
+                borderRadius: '12.5px',
+                backgroundColor: 'rgba(255, 255, 255, 0.5)',
+                fontFamily: 'Helvetica',
+                fontSize: '24px',
+                cursor: 'pointer',
+            }}
+            >
+            Start
+            </button>
+        </Link>
 
+        <Link to="/Endings">
+            <button
+            style={{
+                height: '20vh',
+                width: '100%',
+                borderRadius: '12.5px',
+                backgroundColor: 'rgba(255, 255, 255, 0.5)',
+                fontFamily: 'Helvetica',
+                fontSize: '24px',
+                cursor: 'pointer',
+            }}
+            >
+            Endings
+            </button>
+        </Link>
 
+            <button
+            onClick={() => window.open("https://github.com/Frankataccess")}
+            style={{
+                height: '20vh',
+                width: '100%',
+                borderRadius: '12.5px',
+                backgroundColor: 'rgba(255, 255, 255, 0.5)',
+                fontFamily: 'Helvetica',
+                fontSize: '24px',
+                cursor: 'pointer',
+
+            }}
+            >
+            Github
+            </button>
+        </div>
+        </div>
+    </div>
     )
 }
-
 
 export default Menu;
