@@ -172,12 +172,12 @@
         "body":"",
         "choices": [
             {
-                "text": "Random",
+                "text": "Option 1",
                 "target": "PB5",
                 "target-route":"Police Luck"
             },
             {
-                "text": "Random",
+                "text": "Option 2",
                 "target": "PB1",
                 "target-route":"Police Luck"
             }
@@ -348,12 +348,12 @@
         "body":"",
         "choices": [
             {
-                "text": "Random",
+                "text": "Option 1",
                 "target": "PB13",
                 "target-route":"police fight"
             },
             {
-                "text": "Random",
+                "text": "Option 2",
                 "target": "PB14",
                 "target-route":"police fight"
             }
@@ -368,12 +368,12 @@
         "body":"",
         "choices": [
             {
-                "text": "Random",
+                "text": "Option 1",
                 "target": "PB16",
                 "target-route":"police run"
             },
             {
-                "text": "Random",
+                "text": "Option 2",
                 "target": "PB15",
                 "target-route":"police run"
             }
@@ -498,12 +498,12 @@
         "body":"",
         "choices": [
             {
-                "text": "Random",
+                "text": "Option 1",
                 "target": "PT5",
                 "target-route":"Police Luck"
             },
             {
-                "text": "Random",
+                "text": "Option 2",
                 "target": "PT1",
                 "target-route":"Police Luck"
             }
@@ -673,12 +673,12 @@
         "body":"",
         "choices": [
             {
-                "text": "Random",
+                "text": "Option 1",
                 "target": "PT13",
                 "target-route":"police fight"
             },
             {
-                "text": "Random",
+                "text": "Option 2",
                 "target": "PT14",
                 "target-route":"police fight"
             }
@@ -693,12 +693,12 @@
         "body":"",
         "choices": [
             {
-                "text": "Random",
+                "text": "Option 1",
                 "target": "PT16",
                 "target-route":"police run"
             },
             {
-                "text": "Random",
+                "text": "Option 2",
                 "target": "PT15",
                 "target-route":"police run"
             }
@@ -823,11 +823,11 @@
         "body":"A group of people approach you (Random)",
         "choices": [
             {
-                "text": "Random",
+                "text": "Option 1",
                 "target": "B2",
                 "target-route":"Bear pit friends"
             },            {
-                "text": "Random",
+                "text": "Option 2",
                 "target": "BMB1",
                 "target-route":"Badman encounter"
             }
@@ -994,12 +994,12 @@
         "body":"Random",
         "choices": [
             {
-                "text": "Random",
+                "text": "Option 1",
                 "target": "BMB10",
                 "target-route":"Badman escape"
             },   
             {
-                "text": "Random",
+                "text": "Option 2",
                 "target": "BMB9",
                 "target-route":"Badman slip"
             }
@@ -1014,12 +1014,12 @@
         "body":"Random",
         "choices": [
             {
-                "text": "Random",
+                "text": "Option 1",
                 "target": "BM7",
                 "target-route":"Badman Fight win"
             },   
             {
-                "text": "Random",
+                "text": "Option 2",
                 "target": "BMB8",
                 "target-route":"Badman fight lose"
             }
@@ -1149,12 +1149,12 @@
         "body":"Random",
         "choices": [
             {
-                "text": "Random",
+                "text": "Option 1",
                 "target": "BMT10",
                 "target-route":"Badman escape"
             },   
             {
-                "text": "Random",
+                "text": "Option 2",
                 "target": "BMT9",
                 "target-route":"Badman slip"
             }
@@ -1170,12 +1170,12 @@
         "body":"Badman fight (Random)",
         "choices": [
             {
-                "text": "Random",
+                "text": "Option 1",
                 "target": "BMT7",
                 "target-route":"Badman Fight win"
             },   
             {
-                "text": "Random",
+                "text": "Option 2",
                 "target": "BMT8",
                 "target-route":"Badman fight lose"
             }
@@ -1285,12 +1285,12 @@
         "body":"He takes you to Gainsbrough square before he kicks you out (Random)",
         "choices": [
             {
-                "text": "Random",
+                "text": "Option 1",
                 "target": "PT0",
                 "target-route":"Police"
             },
             {
-                "text": "Random",
+                "text": "Option 2",
                 "target": "BMT1",
                 "target-route":"Badman encounter"
             }
