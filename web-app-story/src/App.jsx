@@ -5,19 +5,23 @@ import Data from './story.json';
 
 const App = () => {
 
+  // Reset margin and padding for the body to avoid any unwanted spaces
   useEffect(() => {
-    document.body.style.margin = '0';
-    document.body.style.padding = '0';
-    document.documentElement.style.height = '100%';
-    document.body.style.height = '100%';
+    document.body.style.margin = '0'; // Reset body margin
+    document.body.style.padding = '0'; // Reset body padding
+    document.documentElement.style.height = '100%'; // Ensure the html element takes full height
+    document.body.style.height = '100%'; // Ensure body takes full height
   }, []);
 
+  // Check local storage for saved scene ID on initial load, default to "1"
   const [currentSceneId, setCurrentSceneId] = useState("1");
 
   useEffect(() => {
+    // Save the current scene ID to local storage on every update
     localStorage.setItem("currentSceneId", currentSceneId);
   }, [currentSceneId]);
 
+  // Access the 'story' array inside 'Data'
   const currentScene = Data.story.find((scene) => scene.ID === currentSceneId);
 
   const handleOptionClick = (nextId) => {
@@ -37,13 +41,13 @@ const App = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        overflow: 'hidden',
+        overflow: 'hidden', // Prevent any overflow that could create a border
       }}
     >
       <picture>
         <source srcSet={currentScene.image} />
         <img
-          src={currentScene.image}
+          src={currentScene.image} // Add the source for the image
           alt="Scene"
           style={{
             position: 'absolute',
@@ -56,27 +60,28 @@ const App = () => {
         />
       </picture>
 
+      {/* Return to Menu Navbar */}
       <div
         className="return-to-menu"
         style={{
-          position: 'fixed',
-          top: 0,
+          position: 'fixed', // Fixed at the top of the page
+          top: 0,            // Ensures it's at the top
           left: 0,
-          width: '100%',
-          backgroundColor: 'rgba(255, 255, 255, 0.5)',
-          height: '5vh',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
+          width: '100%',     // Full width of the screen
+          backgroundColor: 'rgba(255, 255, 255, 0.5)', // Semi-transparent background
+          height: '5vh',     // Navbar height
+          display: 'flex',   // Flex container for alignment
+          justifyContent: 'center', // Center the content horizontally
+          alignItems: 'center', // Center the content vertically
         }}
       >
         <Link
           to="/"
           style={{
-            textDecoration: 'none',
-            color: 'black',
-            fontSize: '24px',
-            fontFamily: 'Helvetica',
+            textDecoration: 'none', // Removes underline
+            color: 'black',         // Text color
+            fontSize: '24px',       // Font size for the text
+            fontFamily: 'Helvetica', // Optional: Font family
           }}
         >
           Return to Menu
