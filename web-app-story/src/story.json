@@ -1015,7 +1015,7 @@
         "choices": [
             {
                 "text": "Option 1",
-                "target": "BM7",
+                "target": "BMB7",
                 "target-route":"Badman Fight win"
             },   
             {
